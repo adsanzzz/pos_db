@@ -31,6 +31,9 @@ Route::get('/', function () {
         return Inertia::render('UploadDokumen');
     })->name('UploadDokumen');
 
+    Route::get('/DashboardUsaha', function () {
+        return Inertia::render('DashboardUsaha');
+    })->name('dashboardusaha');
 
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
