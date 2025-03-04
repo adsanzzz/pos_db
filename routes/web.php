@@ -35,6 +35,22 @@ Route::get('/', function () {
         return Inertia::render('DashboardUsaha');
     })->name('dashboardusaha');
 
+    Route::get('/FAQ', function () {
+        return Inertia::render('FAQ');
+    })->name('FAQ');
+
+    Route::get('/Blog', function () {
+        return Inertia::render('Blog');
+    })->name('Blog');
+
+    Route::get('/Aboutus', function () {
+        return Inertia::render('Aboutus');
+    })->name('Aboutus');
+
+    Route::get('/Kasir', function () {
+        return Inertia::render('Kasir');
+    })->name('Kasir');
+
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
