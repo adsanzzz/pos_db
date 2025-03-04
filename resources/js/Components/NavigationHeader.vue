@@ -8,16 +8,16 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex gap-10 items-center text-base font-medium">
-        <a href="#" class="text-lg text-black">Home</a>
-        <a href="#" class="hover:text-black">FAQ</a>
-        <a href="#" class="hover:text-black">Blog</a>
-        <a href="#" class="hover:text-black">About Us</a>
+        <a href="/" class="text-lg text-black">Home</a>
+        <a href="/FAQ" class="hover:text-black">FAQ</a>
+        <a href="/Blog" class="hover:text-black">Blog</a>
+        <a href="/Aboutus" class="hover:text-black">About Us</a>
       </div>
       <div class="hidden md:flex gap-5 items-center">
-        <button class="text-neutral-400 hover:text-black">Login</button>
-        <button class="px-2.5 py-3 text-gray-50 bg-violet-400 rounded-xl hover:bg-violet-500">
+        <a href="/login" class="text-neutral-400 hover:text-black">Login</a>
+        <a href="/register" class="px-2.5 py-3 text-gray-50 bg-violet-400 rounded-xl hover:bg-violet-500">
           Sign Up
-        </button>
+        </a>
       </div>
 
       <!-- Mobile Menu Toggle -->
@@ -39,16 +39,15 @@
     <!-- Mobile Menu -->
     <div v-if="isMobileMenuOpen" class="md:hidden bg-white shadow-md">
       <div class="px-4 py-4 flex flex-col gap-4">
-        <a href="LandingPage" class="text-lg text-black">Home</a>
-        <a href="FAQ" class="hover:text-black">FAQ</a>
-        <a href="Blog"
-         class="hover:text-black">Blog</a>
-        <a href="About Us" class="hover:text-black">About Us</a>
+        <a href="/LandingPage" class="text-lg text-black">Home</a>
+        <a href="/FAQ" class="hover:text-black">FAQ</a>
+        <a href="/Blog" class="hover:text-black">Blog</a>
+        <a href="/Aboutus" class="hover:text-black">About Us</a>
         <div class="flex flex-col gap-2">
-          <button class="text-neutral-400 hover:text-black text-left">Login</button>
-          <button class="px-2.5 py-3 text-gray-50 bg-violet-400 rounded-xl hover:bg-violet-500 text-left">
+          <a href="/login" class="text-neutral-400 hover:text-black text-left">Login</a>
+          <a href="/register" class="px-2.5 py-3 text-gray-50 bg-violet-400 rounded-xl hover:bg-violet-500 text-left">
             Sign Up
-          </button>
+          </a>
         </div>
       </div>
     </div>
