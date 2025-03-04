@@ -19,6 +19,18 @@ Route::get('/', function () {
         return Inertia::render('LandingPage');
     })->name('LandingPage');
 
+    Route::get('/LoginPage', function () {
+        return Inertia::render('LoginPage');
+    })->name('LoginPage');
+
+    Route::get('/Register', function () {
+        return Inertia::render('Register');
+    })->name('Register');
+
+    Route::get('/UploadDokumen', function () {
+        return Inertia::render('UploadDokumen');
+    })->name('UploadDokumen');
+
 
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
