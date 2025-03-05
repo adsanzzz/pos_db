@@ -105,7 +105,7 @@
                   </TextButton>
                   <p class="text-sm font-medium text-zinc-800 text-center">
                     Already have an account?
-                    <a href="#" class="font-semibold text-[#FF8682] hover:underline">Login</a>
+                    <a href="/login" class="font-semibold text-[#FF8682] hover:underline">Login</a>
                   </p>
                 </div>
               </form>

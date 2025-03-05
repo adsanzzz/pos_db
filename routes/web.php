@@ -19,9 +19,9 @@ Route::get('/', function () {
         return Inertia::render('LandingPage');
     })->name('LandingPage');
 
-    Route::get('/LoginPage', function () {
-        return Inertia::render('LoginPage');
-    })->name('LoginPage');
+    Route::get('/login', function () {
+        return Inertia::render('Login');
+    })->name('login');
 
     Route::get('/Register', function () {
         return Inertia::render('Register');
@@ -50,6 +50,10 @@ Route::get('/', function () {
     Route::get('/Kasir', function () {
         return Inertia::render('Kasir');
     })->name('Kasir');
+
+    Route::get('/Verifikator', function () {
+        return Inertia::render('Verifikator');
+    })->name('Verifikator');
 
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
