@@ -59,6 +59,14 @@ Route::get('/', function () {
         return Inertia::render('AdminPage');
     })->name('AdminPage');
 
+    Route::get('/Transaksi', function () {
+        return Inertia::render('Transaksi');
+    })->name('Transaksi');
+
+    Route::get('/Payment', function () {
+        return Inertia::render('Payment');
+    })->name('Payment');
+
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
