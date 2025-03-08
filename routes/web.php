@@ -55,6 +55,10 @@ Route::get('/', function () {
         return Inertia::render('Verifikator');
     })->name('Verifikator');
 
+    Route::get('/AdminPage', function () {
+        return Inertia::render('AdminPage');
+    })->name('AdminPage');
+
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
