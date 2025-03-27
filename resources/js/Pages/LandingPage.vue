@@ -4,7 +4,14 @@
     <HeroSection />
     <FeaturesSection />
   </div>
+      <!-- Footer -->
+      <footer class="bg-white shadow-inner py-4">
+      <div class="container mx-auto text-center text-sm text-gray-600">
+        &copy; 2025 Kasir GWL. All rights reserved.
+      </div>
+    </footer>
 </template>
+
 
 <script>
 import NavigationHeader from "../Components/NavigationHeader.vue";

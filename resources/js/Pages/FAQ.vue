@@ -35,9 +35,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white shadow p-9 pt-100">
+    <footer class="bg-white shadow-inner py-4">
       <div class="container mx-auto text-center text-sm text-gray-600">
-        &copy; 2025 GWL Kasir. All rights reserved.
+        &copy; 2025 Kasir GWL. All rights reserved.
       </div>
     </footer>
   </div>

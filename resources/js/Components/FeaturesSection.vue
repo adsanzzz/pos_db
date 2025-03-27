@@ -37,12 +37,12 @@ export default {
         {
           title: "Promo & diskon otomatis",
           icon:
-            "https://via.placeholder.com/64?text=Promo", // Ganti dengan URL icon yang sesuai
+            "images/discount.png", 
         },
         {
           title: "Pemantauan stok real-time",
           icon:
-            "https://via.placeholder.com/64?text=Stok", // Ganti dengan URL icon yang sesuai
+            "images/real-time.png", // Ganti dengan URL icon yang sesuai
         },
       ],
     };
