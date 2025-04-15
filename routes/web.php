@@ -55,6 +55,10 @@ Route::get('/', function () {
         return Inertia::render('Verifikator');
     })->name('Verifikator');
 
+    Route::get('/Helpdesk', function () {
+        return Inertia::render('Helpdesk');
+    })->name('Helpdesk');
+
     Route::get('/AdminPage', function () {
         return Inertia::render('AdminPage');
     })->name('AdminPage');
@@ -66,6 +70,10 @@ Route::get('/', function () {
     Route::get('/Payment', function () {
         return Inertia::render('Payment');
     })->name('Payment');
+
+    Route::get('/Setting', function () {
+        return Inertia::render('Setting');
+    })->name('Setting');
 
 // Grup route profil (hanya untuk user yang sudah login)
 Route::middleware('auth')->group(function () {
