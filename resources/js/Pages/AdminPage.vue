@@ -34,7 +34,7 @@
             showSidebar ? 'transform-none' : 'transform -translate-x-full lg:transform-none'
           ]"
         >
-          <img src="/images/setting.png" alt="Pengaturan" class="w-8 h-8">
+          <img src="/images/sett.png" alt="Pengaturan" class="w-8 h-8">
           <span class="font-bold text-sm mt-2">Pengaturan</span>
         </div>
       </a>

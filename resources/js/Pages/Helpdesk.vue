@@ -43,6 +43,18 @@
             </svg>
             <span class="font-bold text-sm mt-2">Helpdesk</span>
           </div>
+          <a href="/Pengaturan">
+            <div
+              :class="[
+                'bg-purple-400 p-4 rounded-lg flex flex-col items-center cursor-pointer hover:bg-purple-300 transition-all duration-300',
+                showSidebar ? 'transform-none' : 'transform -translate-x-full lg:transform-none',
+                'transition-transform delay-100'
+              ]"
+            >
+            <img src="/images/sett.png" alt="Pengaturan" class="w-11 h-11" />
+              <span class="font-bold text-sm mt-1">Pengaturan</span>
+            </div>
+          </a>
         </div>
         <div 
           :class="[
